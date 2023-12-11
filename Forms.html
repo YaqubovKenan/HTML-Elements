@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Exam.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <ul class="ulNav" type="none">
+            <li class="navList"><a href="Home.html" class="aNav">Home</a></li>
+            <li class="navList"><a href="Buttons.html" class="aNav">Buttons</a></li>
+            <li class="navList"><a href="Images.html" class="aNav">Images</a></li>
+            <li class="navList"><a href="Tables.html" class="aNav">Tables</a></li>
+            <li class="navList"><a href="Lists.html" class="aNav">Lists</a></li>
+            <li class="navList"><a href="Iframes.html" class="aNav">Iframes</a></li>
+            <li class="navList"><a href="Forms.html" class="aNav">Forms</a></li>
+            <li class="navList"><a href="Layouts.html" class="aNav">Layouts</a></li>
+            <li class="navList"><a href="Menus.html" class="aNav">Menus</a></li>
+        </ul>
+    </nav>
+    <h1>With forms you can collect data from users!</h1>
+
+    <form action="https://www.w3schools.com/action_page.php" id="form">
+        <label for="name">Your name</label><br>
+        <input type="text" name="user_name" id="name" size="40"><br><br>
+
+        <label for="surname">Your surname</label><br>
+        <input type="text" name="user_surname" id="surname" disabled><br><br>
+
+        <label for="email">Your email</label><br>
+        <input type="email" name="user_email" id="email" autofocus><br><br>
+
+        <label for="password">Your password</label><br>
+        <input type="password" name="user_password" id="password" minlength="4" maxlength="10"><br><br>
+
+        <label for="tel">Your telephone</label><br>
+        <input type="tel" id="tel" name="user_tel" pattern="+[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+            placeholder="+994 12 345 67 89"><br><br>
+
+        <label for="url">Your link</label><br>
+        <input type="url" name="user_link" id="url"><br><br>
+
+        <label for="age">Your age</label><br>
+        <input type="number" name="user_age" id="age" min="18" max="67"><br><br>
+
+        <label for="choose">Your profession</label><br>
+        <select name="user_profession" id="choose">
+            <optgroup label="Web development">
+                <option value="front-end">Front-End</option>
+                <option value="back-end">Back-End</option>
+                <option value="full-stack">Full Stack</option>
+            </optgroup>
+            <optgroup label="Networking">
+                <option value="network-admin">Network Admin</option>
+                <option value="network-security">Network Security</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="OS">Your favourite OS</label><br>
+        <input list="favOS" id="os">
+        <datalist id="favOS">
+            <option value="Linux"></option>
+            <option value="Windows"></option>
+            <option value="MacOS"></option>
+        </datalist><br><br>
+
+        <label for="color">Your favourite color</label><br>
+        <input type="color" name="fav_color" id="color"><br><br>
+
+        <label for="rate">Your rate</label><br>
+        <input type="range" name="user_rate" id="rate" step="10"><br><br>
+
+        <label for="birthday">Date of birth</label><br>
+        <input type="date" name="user_birthday" id="birthday"><br><br>
+
+        <label for="hours">Working hours</label><br>
+        <label>From:</label>
+        <input type="text" name="working_hour_from">
+        <label>To:</label>
+        <input type="text" name="working_hour_to"><br><br>
+
+        <label for="moment">Your favourite moment</label><br>
+        <input type="datetime-local" name="fav_moment" id="moment" value="2023-10-10T03:30"><br><br>
+
+        <label for="week">Your favourite week</label><br>
+        <input type="week" name="week" id="week"><br><br>
+
+        <label for="CV">Your CV</label><br>
+        <input type="file" name="user_cv" id="CV" value="Browse..."><br><br>
+
+        <label>Gender</label><br>
+        <input type="radio" name="user_gender" checked>
+        <label>Male</label>
+        <input type="radio" name="user_gender">
+        <label>Female</label><br><br>
+
+        <label>Languages</label><br>
+        <input type="checkbox" name="az"><label>Azerbaijani</label>
+        <input type="checkbox" name="en"><label>English</label>
+        <input type="checkbox" name="tr"><label>Turkish</label><br><br>
+
+        <label for="message">Your message</label><br>
+        <textarea name="user_message" id="message" cols="45" rows="15" readonly>Here is your message!</textarea>
+
+        <fieldset>
+            <legend>Form Buttons</legend>
+            <input type="submit" value="Submit with input">
+            <input type="reset" value="Reset with input">
+            <br><br>
+            <button type="submit" style="color: black;">Submit with button</button>
+            <button type="reset" style="color: black;">Reset with button</button>
+            <br><br>
+            <button type="submit" style="color: black;">Submit to W3 schools</button>
+            <button type="submit" style="color: black;" formaction="Forms.html">Submit to current page</button>
+            <br><br>
+            <button type="submit" style="color: black;">Submit with validate</button>
+            <button type="submit" style="color: black;" formnovalidate>Submit without validate</button>
+            <br><br>
+            <button type="submit" style="color: black;" formmethod="get">Submit with GET method</button>
+            <button type="submit" style="color: black;" formmethod="post">Submit with POST method</button>
+            <br><br>
+        </fieldset>
+
+    </form>
+    <h2>Buttons out of form</h2>
+    <input type="submit" formtarget="_self" form="form" value="Submit in current tab"></input>
+    <input type="submit" formtarget="_blank" form="form" value="Submit in new tab"></input>
+</body>
+
+</html>

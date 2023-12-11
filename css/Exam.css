@@ -1,27 +1,85 @@
 nav,
-ul {
+.ulNav {
     background-color: rgba(73, 94, 87, 1.00);
     display: flex;
     padding: 0;
     margin: 0;
 }
 
-li,
-a {
+.navList,
+.aNav {
     color: white;
     text-decoration: none;
     padding: 20px 15px;
 }
 
-li:hover {
+.navList:hover {
     background-color: white;
 }
 
-a:hover {
+.aNav:hover {
     color: rgba(73, 94, 87, 1.00);
 }
 
 h1,
 h2 {
     color: rgba(67, 69, 73, 1.00);
+}
+
+body {
+    font-family: lato;
+}
+
+button {
+    color: white;
+}
+
+.uniqueButton {
+    background-color: rgba(12, 53, 106, 1.00);
+    border: 1px solid rgba(12, 53, 106, 1.00);
+    border-radius: 8px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.uniqueButton>a {
+    color: white;
+    text-decoration: none;
+}
+
+.commonButton>a {
+    color: white;
+    text-decoration: none;
+}
+
+.commonButton {
+    border-radius: 8px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+th,
+td {
+    color: white;
+    padding: 15px 0px;
+}
+
+table {
+    border: 2px solid white;
+}
+
+thead {
+    background-color: rgba(54, 48, 98, 1.00);
+}
+
+tfoot {
+    background-color: rgba(249, 148, 23, 1.00);
+}
+
+.li {
+    background-color: rgba(79, 112, 156, 1.00);
+    margin-top: 10px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin-right: 10px;
 }
