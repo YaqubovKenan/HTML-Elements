@@ -1,0 +1,39 @@
+header, nav, article, footer{
+    padding: 24px;
+
+}
+
+header, footer{
+    background-color: rgba(0, 28, 48, 1.00);
+}
+
+footer{
+    clear: both;
+}
+
+nav{
+    width: 30%;
+    background-color: rgba(23, 107, 135, 1.00);
+    box-sizing: border-box;
+    float: left;
+    height: 300px;
+}
+
+article{
+    width: 70%;
+    background-color: rgba(100, 204, 197, 1.00);
+    float: right;
+    box-sizing: border-box;
+    height: 300px;
+}
+
+a{
+    color: white;
+}
+
+
+@media (max-width: 750px){
+article, nav{
+    width: 100%;
+    height: auto;}
+}

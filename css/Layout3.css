@@ -1,0 +1,37 @@
+header, nav, article, footer{
+    padding: 24px;
+
+}
+
+header, footer{
+    background-color: rgba(0, 28, 48, 1.00);
+}
+
+header{
+    grid-area: head;
+}
+
+nav{
+    background-color: rgba(23, 107, 135, 1.00);
+    box-sizing: border-box;
+    height: 300px;
+    grid-area: nav;
+}
+
+article{
+    background-color: rgba(100, 204, 197, 1.00);
+    box-sizing: border-box;
+    height: 300px;
+    grid-area: article;
+}
+
+div{
+    grid-template-areas: 'head head'
+                         'nav article'
+                         'foot foot';
+}
+
+a{
+    color: white;
+}
+
