@@ -1,0 +1,11 @@
+nav ul{
+    background-color: rgba(77, 76, 125, 1.00);
+    font-family: arial;
+}
+
+li a{
+    color: white;
+    padding: 24px;
+    display: block;
+    text-decoration: none;
+}

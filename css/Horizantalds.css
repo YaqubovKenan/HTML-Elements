@@ -1,0 +1,13 @@
+nav, ul{
+    background-color: rgba(77, 76, 125, 1.00);
+    display: flex;
+    font-family: arial;
+}
+
+li, a{
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
